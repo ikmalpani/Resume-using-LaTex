@@ -1,0 +1,58 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Configuration
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Themes: Awesome-CV
+\documentclass[11pt, a4paper]{awesome-cv}
+
+%%% Override a directory location for fonts(default: 'fonts/')
+\fontdir[fonts/]
+
+%%% Configure a directory location for sections
+\newcommand*{\sectiondir}{resume/}
+
+%%% Override color
+
+\colorlet{awesome}{awesome-red}
+
+\usepackage{import}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Personal Data
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Essentials
+\name{Keshav}{Malpani}
+\address{817 S Laflin St, Apt 2R, Chicago, Illinois - 60607}
+\mobile{(+1) 312-868-2955} 
+%%% Social
+\email{keshavmalpani9@gmail.com}
+\github{ikmalpani}
+\linkedin{ikmalpani}
+\skype{malpanikeshav95}
+%%% Optionals
+\position{Software Developer{\enskip\cdotp\enskip}Data Scientist}
+\quote{Seeking an internship for summer 2017 where my skill and education will be used to create innovative and profitable products}
+
+
+
+%%% Make a footer for CV with three arguments(<left>, <center>, <right>)
+\makecvfooter
+  {}%\today}
+  {Designed using LaTex}
+  {}%\thepage}
+
+\begin{document}
+%%% Make a header for CV with personal data
+\makecvheader
+
+%%% Import contents
+\import{\sectiondir}{education.tex}
+\import{\sectiondir}{skills.tex}
+\import{\sectiondir}{experience.tex}
+\import{\sectiondir}{projects.tex}
+\import{\sectiondir}{extracurricular.tex}
+%\import{\sectiondir}{presentation.tex}
+%\import{\sectiondir}{committees.tex}
+
+\end{document}
