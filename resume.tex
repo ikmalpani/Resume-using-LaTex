@@ -3,7 +3,7 @@
 %     Configuration
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Themes: Awesome-CV
-\documentclass[11pt, a4paper]{awesome-cv}
+\documentclass[11pt, letter]{awesome-cv}
 
 %%% Override a directory location for fonts(default: 'fonts/')
 \fontdir[fonts/]
@@ -13,7 +13,7 @@
 
 %%% Override color
 
-\colorlet{awesome}{awesome-red}
+\colorlet{awesome}{awesome-darknight}
 
 \usepackage{import}
 
@@ -22,8 +22,8 @@
 %     Personal Data
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Essentials
-\name{Keshav}{Malpani}
-\address{817 S Laflin St, Apt 2R, Chicago, Illinois - 60607}
+\name{}{Keshav Malpani}
+%\address{1333 W Flournoy St, Apt 2W, Chicago, Illinois - 60607}
 \mobile{(+1) 312-868-2955} 
 %%% Social
 \email{keshavmalpani9@gmail.com}
@@ -31,15 +31,15 @@
 \linkedin{ikmalpani}
 \skype{malpanikeshav95}
 %%% Optionals
-\position{Software Developer{\enskip\cdotp\enskip}Data Scientist}
-\quote{Seeking an internship for summer 2017 where my skill and education will be used to create innovative and profitable products}
-
+\position{Data Engineer{\enskip\cdotp\enskip}Data Scientist{\enskip\cdotp\enskip}Software Developer}
+%\quote{Seeking an internship for summer 2017 where my skill and education will be used to create innovative and profitable products}
+\vspace{5mm}
 
 
 %%% Make a footer for CV with three arguments(<left>, <center>, <right>)
 \makecvfooter
   {}%\today}
-  {Designed using LaTex}
+  {}
   {}%\thepage}
 
 \begin{document}
@@ -47,12 +47,17 @@
 \makecvheader
 
 %%% Import contents
+\vspace{-1mm}
 \import{\sectiondir}{education.tex}
+\vspace{-3mm}
 \import{\sectiondir}{skills.tex}
+\vspace{-2mm}
 \import{\sectiondir}{experience.tex}
+\vspace{-3mm}
 \import{\sectiondir}{projects.tex}
-\import{\sectiondir}{extracurricular.tex}
+\vspace{-10mm}
+%\import{\sectiondir}{extracurricular.tex}
+\vspace{-25mm}
 %\import{\sectiondir}{presentation.tex}
 %\import{\sectiondir}{committees.tex}
-
 \end{document}
